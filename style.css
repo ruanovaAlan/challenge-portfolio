@@ -1,0 +1,47 @@
+body {
+  margin: auto;
+  width: 60%;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+}
+
+li#mail {
+  font-weight: bold;
+}
+
+/* Titulo */
+header {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+}
+
+img {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
