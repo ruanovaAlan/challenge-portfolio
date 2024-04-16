@@ -1,6 +1,17 @@
 body {
   margin: auto;
-  width: 60%;
+  width: 80%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -41,7 +52,59 @@ img {
   width: auto;
 }
 
+/* Sobre mi */
+
+#acerca-de-mi {
+  margin-top: 50px;
+}
+
+
+
+#acerca-de-mi p {
+  text-wrap: pretty;
+}
+
+/* Hobbies / Skills */
+
+#hobbies-soft-skills {
+  margin-top: 50px;
+}
+
+#hobbies-soft-skills h2 {
+  text-align: center;
+}
+
+#skills,
+#hobbies {
+  margin-top: 50px;
+}
+
+ul.skills-list,
+ul.hobbies-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.skills li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
 /* Footer */
 footer {
   text-align: center;
 }
+
+/* @media (min-width: 834px) {
+  body {
+    width: 60%;
+  }
+
+  footer {
+    text-align: left;
+  }
+} */
