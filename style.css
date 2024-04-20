@@ -122,7 +122,6 @@ ul.hobbies-list {
 /* Formacion */
 
 #formaciones {
-  height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,6 +132,12 @@ ul.hobbies-list {
   text-align: center;
   color: #F5EFED;
 
+}
+
+.formacion div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 div.lista-formaciones {
