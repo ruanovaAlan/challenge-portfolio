@@ -1,20 +1,18 @@
 body {
   margin: auto;
   width: 80%;
+  background-image: url('images/gradient.png');
 }
 
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  color: #F5EFED;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 700;
-}
-
-h3 {
-  font-weight: 600;
 }
 
 /* Navbar */
@@ -196,6 +194,13 @@ div.formacion {
   height: auto;
 }
 
+/* Contacto */
+
+form {
+  width: 50%;
+  margin: auto;
+
+}
 
 /* Footer */
 footer {
