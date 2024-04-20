@@ -87,7 +87,7 @@ img#foto-perfil {
 
 #hobbies-soft-skills {
   background-color: #068D9D;
-  height: 20rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,8 +115,8 @@ ul.hobbies-list {
 
 .skills-list span,
 .hobbies-list span {
-  /* color: #FFB20F; */
   margin-top: 15px;
+  opacity: .8;
 }
 
 /* Formacion */
@@ -144,14 +144,20 @@ div.lista-formaciones {
 div.formacion {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
+
 }
 
 .formacion img {
   height: 3rem;
   width: auto;
+  margin: auto;
   margin-bottom: 15px;
+}
 
+.formacion .periodo {
+  opacity: .8;
 }
 
 /* Experiencia */
