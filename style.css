@@ -105,11 +105,18 @@ ul.hobbies-list {
   /* margin-top: 50px; */
 }
 
-.skills li {
+.skills-list li,
+.hobbies-list li {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 10px;
+}
+
+.skills-list span,
+.hobbies-list span {
+  /* color: #FFB20F; */
+  margin-top: 15px;
 }
 
 /* Formacion */
