@@ -342,4 +342,7 @@ footer {
     margin-top: 0;
   }
 
+  .inputs {
+    width: 50%;
+  }
 }
