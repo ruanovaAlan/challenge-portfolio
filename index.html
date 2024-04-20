@@ -16,15 +16,23 @@
 </head>
 
 <body>
-  <nav id="menu-principal">
-    <p>Alan Ruanova</p>
-    <ul class="links">
-      <li><a href="#acerca-de-mi">Sobre mi</a></li>
-      <li><a href="#hobbies-soft-skills">Skills</a></li>
-      <li><a href="#formaciones">Formación</a></li>
-      <li><a href="#experiencia">Proyectos</a></li>
-      <li id="email"><a href=""><strong>ruanovaalan96@gmil.com</strong></a></li>
-    </ul>
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <p class="navbar-brand ps-5" href="#">Alan Ruanova</p>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNavAltMarkup">
+        <div class="navbar-nav ps-5">
+          <a class="nav-link" href="#acerca-de-mi">Sobre mi</a>
+          <a class="nav-link" href="#hobbies-soft-skills">Skills</a>
+          <a class="nav-link" href="#formaciones">Formación</a>
+          <a class="nav-link" href="#experiencia">Proyectos</a>
+          <a class="nav-link" href=""><strong>ruanovaalan96@gmil.com</strong></a>
+        </div>
+      </div>
+    </div>
   </nav>
 
   <header class="mt-5" id="titulo">
@@ -35,11 +43,11 @@
     <img id="foto-perfil" class="shadow" src="images/IMG_9982.jpg" alt="foto de perfil">
   </header>
 
-  <main id="acerca-de-mi" class="mt-5">
+  <main id="acerca-de-mi">
     <h2 class="my-5">Sobre mi</h2>
     <div class="mb-5">
-      <p>Soy Alan, me apasiona el mundo de la pogramación, ya que tengo la libertidad de crear y materializar las ideas
-        .</p>
+      <p>Soy Alan, me apasiona el mundo de la pogramación, ya que tengo la libertidad de crear y materializar las ideas.
+      </p>
       <p>He realizado diversos proyectos, los cuales me han hecho entender y perfeccionar mis habilidades
         como programador, así como el privilegio de realizar pequeños trabajos como freelance.</p>
     </div>
@@ -114,11 +122,12 @@
       <div class="card mb-3 shadow">
         <img src="images/rousysKitchenHome.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Página fullstack de recetas de cocina</h5>
+          <h3 class="card-title">Página web fullstack de recetas de cocina</h3>
           <p class="card-text mb-3">Rousy's Kitchen</p>
-          <a class="btn btn-outline-secondary repositorio"
+          <a class="btn btn-outline-secondary btn-sm shadow repositorio"
             href="https://github.com/ruanovaAlan/Recipes-Website?tab=readme-ov-file" target="_blank">Repositorio</a>
-          <a class="btn btn-secondary demo" href="https://rousys-kitchen.onrender.com/" target="_blank">Demo</a>
+          <a class="btn btn-secondary btn-sm shadow demo" href="https://rousys-kitchen.onrender.com/"
+            target="_blank">Demo</a>
         </div>
       </div>
     </div>
@@ -127,11 +136,12 @@
       <div class="card mb-3 shadow">
         <img src="images/weekPlanner.png" class="card-img-top" alt="inicio Planificador semanal">
         <div class="card-body">
-          <h5 class="card-title">Planificador Semanal con React</h5>
+          <h3 class="card-title">Planificador Semanal con React</h3>
           <p class="card-text mb-3">Week Planner</p>
-          <a class="btn btn-outline-secondary repositorio" href="https://github.com/ruanovaAlan/Course-Planner"
-            target="_blank">Repositorio</a>
-          <a class="btn btn-secondary demo" href="https://rnva-week-planner.netlify.app/" target="_blank">Demo</a>
+          <a class="btn btn-outline-secondary btn-sm shadow repositorio"
+            href="https://github.com/ruanovaAlan/Course-Planner" target="_blank">Repositorio</a>
+          <a class="btn btn-secondary btn-sm shadow demo" href="https://rnva-week-planner.netlify.app/"
+            target="_blank">Demo</a>
         </div>
       </div>
     </div>
@@ -143,19 +153,19 @@
     <div class="inputs">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" id="nombre" class="form-control">
+        <input type="text" id="nombre" class="form-control shadow">
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" class="form-control">
+        <input type="email" id="email" class="form-control shadow">
       </div>
       <div class="mb-3">
         <label for="asunto" class="form-label">Asunto</label>
-        <input type="text" id="asunto" class="form-control">
+        <input type="text" id="asunto" class="form-control shadow">
       </div>
       <div class="">
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control" name="" id="mensaje" cols="30" rows="5"></textarea>
+        <textarea class="form-control shadow" name="" id="mensaje" cols="30" rows="5"></textarea>
       </div>
     </div>
   </form>
