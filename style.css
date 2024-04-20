@@ -42,11 +42,16 @@ p {
 header {
   margin: auto;
   display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   height: 20rem;
   gap: 30px;
-  align-items: center;
-  justify-content: space-evenly;
 
+}
+
+header div {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 #titulo h2 {
@@ -87,7 +92,6 @@ img#foto-perfil {
 
 #hobbies-soft-skills {
   background-color: #068D9D;
-  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,8 +106,40 @@ ul.hobbies-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* margin-top: 50px; */
 }
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin: auto;
+  gap: 30px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin: auto;
+  gap: 30px;
+}
+
+.skills-list li:nth-child(4),
+.skills-list li:nth-child(5),
+.skills-list li:nth-child(6),
+.skills-list li:nth-child(7) {
+  margin-top: 15px;
+}
+
+.hobbies-list li:nth-child(4),
+.hobbies-list li:nth-child(5),
+.hobbies-list li:nth-child(6) {
+  margin-top: 15px;
+}
+
+
 
 .skills-list li,
 .hobbies-list li {
@@ -151,7 +187,11 @@ div.formacion {
   flex-direction: column;
   align-items: start;
   justify-content: start;
+}
 
+div.formacion:nth-child(2),
+div.formacion:nth-child(3) {
+  margin-top: 4rem;
 }
 
 .formacion img {
@@ -218,7 +258,7 @@ form {
 
 .inputs {
   margin: auto;
-  width: 50%;
+  width: 70%;
 }
 
 /* Footer */
@@ -231,12 +271,71 @@ footer {
   font-weight: 600;
 }
 
-/* @media (min-width: 834px) {
+@media (min-width: 820px) {
   body {
-    width: 60%;
+    width: 100%;
   }
 
-  footer {
-    text-align: left;
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+
   }
-} */
+
+  header div {
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  div.formacion:nth-child(2),
+  div.formacion:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .skills-list,
+  .hobbies-list {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .skills-list li:nth-child(n),
+  .hobbies-list li:nth-child(n) {
+    margin-top: 0;
+  }
+}
+
+/* Estilos para pantallas grandes (más de 1200px) */
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  header div {
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  div.formacion:nth-child(2),
+  div.formacion:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .skills-list,
+  .hobbies-list {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+
+  .skills-list li:nth-child(n),
+  .hobbies-list li:nth-child(n) {
+    margin-top: 0;
+  }
+
+}
