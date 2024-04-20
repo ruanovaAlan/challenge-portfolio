@@ -1,7 +1,5 @@
 body {
   margin: auto;
-  /* width: 80%; */
-  /* background-image: url('images/gradient.png'); */
   background-color: #12355B;
   font-family: "Roboto Slab", serif;
 }
@@ -31,6 +29,11 @@ p {
 .navbar-brand,
 .nav-link {
   color: #FFB20F;
+}
+
+.navbar-toggler {
+  background-color: #FFB20F !important;
+  opacity: .8;
 }
 
 .bg-body-tertiary {
