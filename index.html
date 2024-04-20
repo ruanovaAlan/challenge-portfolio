@@ -24,17 +24,17 @@
     </ul>
   </nav>
 
-  <header>
+  <header class="mt-5" id="titulo">
     <div>
       <h1>Hola! Soy Alan Ruanova</h1>
-      <p>Software Developer</p>
+      <h2>Software Developer</h2>
     </div>
-    <img id="foto-perfil" src="images/IMG_9982.jpg" alt="foto de perfil">
+    <img id="foto-perfil" class="shadow" src="images/IMG_9982.jpg" alt="foto de perfil">
   </header>
 
-  <main id="acerca-de-mi">
-    <h2>Sobre mi</h2>
-    <div>
+  <main id="acerca-de-mi" class="mt-5">
+    <h2 class="my-5">Sobre mi</h2>
+    <div class="mb-5">
       <p>Soy Alan, me apasiona el mundo de la pogramación, ya que tengo la libertidad de crear y materializar las ideas
         .</p>
       <p>He realizado diversos proyectos, los cuales me han hecho entender y perfeccionar mis habilidades
@@ -43,8 +43,8 @@
   </main>
 
   <section id="hobbies-soft-skills">
-    <div id="skillls">
-      <h2>Skills</h2>
+    <div id="skillls" class="my-5">
+      <h2 class="mb-5">Skills</h2>
       <ul class="skills-list">
         <li>
           <i class="fa-brands fa-html5"></i>
@@ -65,8 +65,8 @@
       </ul>
     </div>
 
-    <div id="hobbies">
-      <h2>Hobbies</h2>
+    <div id="hobbies" class="mb-5">
+      <h2 class="mb-5">Hobbies</h2>
       <ul class="hobbies-list">
         <li>
           <i class="fa-solid fa-dumbbell"></i>
@@ -89,8 +89,8 @@
   </section>
 
   <section id="formaciones">
-    <h2>Formación Académica</h2>
-    <div class="lista-formaciones">
+    <h2 class="my-5">Formación Académica</h2>
+    <div class="lista-formaciones mb-5">
       <div class="formacion">
         <img src="images/udemy.png" alt="">
         <span>The Web Development Bootcamp</span>
@@ -105,52 +105,56 @@
   </section>
 
   <section id="experiencia">
-    <h2>Experiencia</h2>
+    <h2 class="mt-5">Experiencia</h2>
 
     <div id="recipes-website" class="proyecto">
-      <div class="img-proyectos">
-        <img src="images/rousysKitchenHome.png" alt="inicio Rousy's Kitchen">
-        <img src="images/rousysKitchen.png" alt="recetas de cocina">
-      </div>
-      <div class="info-proyecto">
-        <h3>Página fullstack de recetas de cocina</h3>
-        <span>Rousy's Kitchen</span>
-        <div class="links">
-          <a class="experiencia-btn repositorio"
+      <div class="card mb-3 shadow">
+        <img src="images/rousysKitchenHome.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Página fullstack de recetas de cocina</h5>
+          <p class="card-text mb-3">Rousy's Kitchen</p>
+          <a class="btn btn-outline-secondary repositorio"
             href="https://github.com/ruanovaAlan/Recipes-Website?tab=readme-ov-file" target="_blank">Repositorio</a>
-          <a class="experiencia-btn demo" href="https://rousys-kitchen.onrender.com/" target="_blank">Demo</a>
+          <a class="btn btn-secondary demo" href="https://rousys-kitchen.onrender.com/" target="_blank">Demo</a>
         </div>
       </div>
     </div>
 
-    <div id="course-planner" class="proyecto">
-      <div class="info-proyecto">
-        <h3>Planificador Semanal con React</h3>
-        <span>Week Planner</span>
-        <div class="links">
-          <a class="experiencia-btn repositorio" href="https://github.com/ruanovaAlan/Course-Planner"
+    <div id="course-planner" class="proyecto mb-5">
+      <div class="card mb-3 shadow">
+        <img src="images/weekPlanner.png" class="card-img-top" alt="inicio Planificador semanal">
+        <div class="card-body">
+          <h5 class="card-title">Planificador Semanal con React</h5>
+          <p class="card-text mb-3">Week Planner</p>
+          <a class="btn btn-outline-secondary repositorio" href="https://github.com/ruanovaAlan/Course-Planner"
             target="_blank">Repositorio</a>
-          <a class="experiencia-btn demo" href="https://rnva-week-planner.netlify.app/" target="_blank">Demo</a>
+          <a class="btn btn-secondary demo" href="https://rnva-week-planner.netlify.app/" target="_blank">Demo</a>
         </div>
-      </div>
-      <div class="img-proyectos">
-        <img src="images/weekPlanner.png" alt="inicio Rousy's Kitchen">
-        <img src="images/planning.png" alt="recetas de cocina">
       </div>
     </div>
 
   </section>
 
-  <form id="contacto" class="mt-5">
-    <h2 class="mb-3 text-center">Contáctame</h2>
-    <label for="nombre" class="form-label">Nombre</label>
-    <input type="text" id="nombre" class="form-control">
-    <label for="email" class="form-label">Email</label>
-    <input type="email" id="email" class="form-control">
-    <label for="asunto" class="form-label">Asunto</label>
-    <input type="text" id="asunto" class="form-control">
-    <label for="mensaje" class="form-label">Mensaje</label>
-    <textarea class="form-control" name="" id="mensaje" cols="30" rows="10"></textarea>
+  <form id="contacto">
+    <h2 class="pt-5 mb-5 text-center">Contáctame</h2>
+    <div class="inputs">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input type="text" id="asunto" class="form-control">
+      </div>
+      <div class="">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" name="" id="mensaje" cols="30" rows="5"></textarea>
+      </div>
+    </div>
   </form>
 
   <footer>Alan Ruanova

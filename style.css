@@ -1,7 +1,9 @@
 body {
   margin: auto;
-  width: 80%;
-  background-image: url('images/gradient.png');
+  /* width: 80%; */
+  /* background-image: url('images/gradient.png'); */
+  background-color: #12355B;
+
 }
 
 h1 {
@@ -17,9 +19,12 @@ h2 {
 
 /* Navbar */
 nav {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  color: #FFB20F;
 }
 
 nav ul {
@@ -40,12 +45,16 @@ li#mail {
 
 /* Titulo */
 header {
-  margin-top: 50px;
+  margin: auto;
   display: flex;
   gap: 30px;
   align-items: center;
   justify-content: space-evenly;
 
+}
+
+#titulo h2 {
+  color: #068D9D;
 }
 
 img#foto-perfil {
@@ -56,32 +65,40 @@ img#foto-perfil {
 
 /* Sobre mi */
 
-#acerca-de-mi {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+#acerca-de-mi main {
+  margin: auto;
 }
 
+#acerca-de-mi {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5EFED;
 
+}
 
-#acerca-de-mi p {
+#acerca-de-mi h2 {
+  color: #12355B;
+}
+
+#acerca-de-mi p,
+#acerca-de-mi h2 {
+  width: 70%;
+  margin: auto;
   text-wrap: pretty;
 }
 
 /* Hobbies / Skills */
 
 #hobbies-soft-skills {
-  margin-top: 50px;
+  background-color: #068D9D;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #hobbies-soft-skills h2 {
   text-align: center;
-}
-
-#skills,
-#hobbies {
-  margin-top: 50px;
 }
 
 ul.skills-list,
@@ -89,7 +106,7 @@ ul.hobbies-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .skills li {
@@ -101,9 +118,18 @@ ul.hobbies-list {
 
 /* Formacion */
 
+#formaciones {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #068D9D;
+}
+
 #formaciones h2 {
   text-align: center;
-  margin: 50px 0;
+  color: #F5EFED;
+
 }
 
 div.lista-formaciones {
@@ -128,6 +154,8 @@ div.formacion {
 /* Experiencia */
 
 #experiencia {
+  background-color: #F5EFED;
+  color: #12355B;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,68 +166,22 @@ div.formacion {
 
 
 .proyecto {
-  width: 50rem;
+  width: 25rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.experiencia-btn {
-  border: 1px solid black;
-  padding: 8px;
-  border-radius: 10px;
-}
-
-.info-proyecto {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  text-wrap: wrap;
-  width: 11rem;
-}
-
-.info-proyecto span {
-  margin-top: 5px;
-}
-
-.links {
-  display: flex;
-  gap: 10px;
-  margin-top: 5px;
-}
-
-.img-proyectos {
-  height: 10rem;
-  width: 35rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(174, 163, 163);
-  border-radius: 5px;
-
-}
-
-.img-proyectos img {
-  width: 15rem;
-  height: auto;
-  border-radius: 10px;
-
-  -webkit-box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.75);
-  box-shadow: 10px 10px 7px -3px rgba(0, 0, 0, 0.75);
-}
-
-#course-planner .img-proyectos img {
-  width: 11rem;
-  height: auto;
 }
 
 /* Contacto */
 
 form {
-  width: 50%;
-  margin: auto;
+  background-color: #068D9D;
+  height: 35rem;
+}
 
+.inputs {
+  margin: auto;
+  width: 50%;
 }
 
 /* Footer */
@@ -207,9 +189,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  margin-top: 50px;
-
+  height: 5rem;
+  color: #F5EFED;
 }
 
 /* @media (min-width: 834px) {
