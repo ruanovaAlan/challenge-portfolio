@@ -3,7 +3,7 @@ body {
   /* width: 80%; */
   /* background-image: url('images/gradient.png'); */
   background-color: #12355B;
-
+  font-family: "Roboto Slab", serif;
 }
 
 h1 {
@@ -47,6 +47,7 @@ li#mail {
 header {
   margin: auto;
   display: flex;
+  height: 15rem;
   gap: 30px;
   align-items: center;
   justify-content: space-evenly;
