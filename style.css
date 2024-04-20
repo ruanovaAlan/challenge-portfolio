@@ -88,6 +88,10 @@ img#foto-perfil {
   text-wrap: pretty;
 }
 
+#acerca-de-mi p {
+  text-align: justify;
+}
+
 /* Hobbies / Skills */
 
 #hobbies-soft-skills {
