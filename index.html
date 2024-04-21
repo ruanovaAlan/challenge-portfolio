@@ -219,10 +219,8 @@
     <div class="inputs">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" name="nombre" id="nombre" class="form-control shadow" required>
-        <div class="invalid-feedback">
-
-        </div>
+        <input type="text" id="nombre" class="form-control shadow" required>
+        <div id="nombre-mensaje">El nombre no puede ser mayor a 50 caracteres.</div>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
@@ -231,10 +229,12 @@
       <div class="mb-3">
         <label for="asunto" class="form-label">Asunto</label>
         <input type="text" id="asunto" class="form-control shadow" required>
+        <div id="asunto-mensaje">El asunto no puede ser mayor a 50 caracteres.</div>
       </div>
-      <div class="">
+      <div>
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control shadow" name="" id="mensaje" cols="30" rows="5" required></textarea>
+        <textarea class="form-control shadow" id="mensaje" cols="30" rows="5" required></textarea>
+        <div id="mensaje-mensaje">El mensaje no puede ser mayor a 300 caracteres.</div>
       </div>
       <button class="btn btn-primary my-3 shadow">Enviar Mensaje</button>
     </div>

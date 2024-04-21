@@ -268,6 +268,21 @@ form {
   width: 70%;
 }
 
+#nombre-mensaje,
+#asunto-mensaje,
+#mensaje-mensaje {
+  display: none;
+}
+
+#nombre-mensaje.active,
+#asunto-mensaje.active,
+#mensaje-mensaje.active {
+  display: block;
+  margin-top: 10px;
+  opacity: .7;
+  font-weight: 400;
+}
+
 /* Footer */
 footer {
   display: flex;
