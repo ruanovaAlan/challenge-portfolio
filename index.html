@@ -214,25 +214,29 @@
 
   </section>
 
-  <form id="contacto">
+  <form id="contacto" class="needs-validation container-fluid" novalidate>
     <h2 class="pt-5 mb-5 text-center">Contáctame</h2>
     <div class="inputs">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" id="nombre" class="form-control shadow">
+        <input type="text" name="nombre" id="nombre" class="form-control shadow" required>
+        <div class="invalid-feedback">
+
+        </div>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" id="email" class="form-control shadow">
+        <input type="email" id="email" class="form-control shadow" required>
       </div>
       <div class="mb-3">
         <label for="asunto" class="form-label">Asunto</label>
-        <input type="text" id="asunto" class="form-control shadow">
+        <input type="text" id="asunto" class="form-control shadow" required>
       </div>
       <div class="">
         <label for="mensaje" class="form-label">Mensaje</label>
-        <textarea class="form-control shadow" name="" id="mensaje" cols="30" rows="5"></textarea>
+        <textarea class="form-control shadow" name="" id="mensaje" cols="30" rows="5" required></textarea>
       </div>
+      <button class="btn btn-primary my-3 shadow">Enviar Mensaje</button>
     </div>
   </form>
 
@@ -240,6 +244,7 @@
     <script>document.write(new Date().getFullYear())</script>
   </footer>
 
+  <script src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

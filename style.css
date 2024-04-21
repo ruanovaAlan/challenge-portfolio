@@ -260,7 +260,7 @@ div.formacion:nth-child(3) {
 
 form {
   background-color: #068D9D;
-  height: 35rem;
+  font-weight: 600;
 }
 
 .inputs {
